@@ -18,3 +18,4 @@ code --install-extension alexdima.copy-relative-path
 code --install-extension alefragnani.bookmarks
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.vs-keybindings
+code --install-extension skyapps.fish-vscode

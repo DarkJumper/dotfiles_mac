@@ -1,5 +1,14 @@
 # My Dofiles
 
+## Before use
+
+you need to install:
+
+1. vscode
+2. Python
+   - install dotbot via pip
+3. homebrew
+
 ## Important before execution
 
 VScode should be installed beforehand.
