@@ -1,0 +1,11 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Peter Schwarz
+	email = p.schwarz1994@outlook.de
+[filesystem "Oracle Corporation|1.8.0_221|/dev/disk1s6"]
+	timestampResolution = 1001 milliseconds
+	minRacyThreshold = 0 nanoseconds
