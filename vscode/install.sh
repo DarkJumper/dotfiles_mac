@@ -1,9 +1,6 @@
 code --install-extension batisteo.vscode-django
 code --install-extension bigonesystems.django
-code --install-extension bibhasdn.django-snippets
-code --install-extension bibhasdn.django-html
 code --install-extension mhutchie.git-graph
-code --install-extension felipecaputo.git-project-manager
 code --install-extension knisterpeter.vscode-github
 code --install-extension github.vscode-pull-request-github
 code --install-extension eamodio.gitlens
@@ -19,3 +16,6 @@ code --install-extension alefragnani.bookmarks
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.vs-keybindings
 code --install-extension skyapps.fish-vscode
+code --install-extension skyapps.fish-vscode
+code --install-extension njpwerner.autodocstring
+code --install-extension visualstudioexptteam.vscodeintellicode

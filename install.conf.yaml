@@ -8,6 +8,7 @@
     - [brew upgrade] # Upgrade Home brew
     - [brew install fish] #Instlal Fish
     - [brew install tmux] # Install tmux
+    - [brew install openssl readline sqlite3 xz zlib] # install all dependencies for pyenv
 
 - link:
     ~/.gitconfig: gitconfig

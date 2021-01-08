@@ -39,6 +39,7 @@
         "120",
         "--aggressive"
     ],
+    "autoDocstring.docstringFormat": "sphinx",
     "python.languageServer": "Pylance",
     "explorer.confirmDelete": false,
     "gitlens.views.repositories.files.layout": "list",
