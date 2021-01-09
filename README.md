@@ -9,16 +9,10 @@ you need to install:
    - install dotbot via pip
 3. homebrew
 
-## Important before execution
-
-VScode should be installed beforehand.
-Code should be mandatory added to path.
+# Installation
 
 ```
-cat << EOF >> ~/.zprofile
-# Add Visual Studio Code (code)
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-EOF
-```
+$ git clone --recurse-submodules https://github.com/DarkJumper/dotfiles_mac ~/.dotfiles
 
-Otherwise no plugin will be installed and an error will be displayed during execution.
+$ ~/.dotfiles/install.sh
+```
