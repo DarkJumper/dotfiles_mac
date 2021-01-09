@@ -2,8 +2,32 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
+echo "Dotbot wird gestartet....."
+
+UNAME=$( command -v uname)
+
+case $( "${UNAME}" | tr '[:upper:]' '[:lower:]') in
+  linux*)
+    printf 'linux\n'
+    ;;
+  darwin*)
+    printf 'darwin\n'
+    CONFIG="install.conf_mac.yaml"
+    ;;
+  msys*|cygwin*|mingw*)
+    # or possible 'bash on windows'
+    printf 'windows\n'
+    CONFIG="install.conf_win.yaml"
+    ;;
+  nt|win*)
+    printf 'windows\n'
+    CONFIG="install.conf_win.yaml"
+    ;;
+  *)
+    printf 'unknown\n'
+    ;;
+esac
 
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

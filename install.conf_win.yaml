@@ -1,14 +1,16 @@
-- defaults:
-    link:
-      relink: true
-
 - clean: 
     - "~"
     - "~/.config/fish"
     - '~/.config/git'
 
+- defaults:
+    link:
+      relink: true
+      force: true
+
 - shell:
-    - [brew upgrade] # Upgrade Home brew
+    - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"] # Installiere Brew
+    #- [brew upgrade] # Upgrade Home brew
     - [brew install fish] #Instlal Fish
     - [brew install tmux] # Install tmux
     - [brew install openssl readline sqlite3 xz zlib] # install all dependencies for pyenv

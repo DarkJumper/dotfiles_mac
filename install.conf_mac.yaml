@@ -1,0 +1,43 @@
+- clean: 
+    - "~"
+    - "~/.config/fish"
+    - '~/.config/git'
+
+- defaults:
+    link:
+      relink: true
+      force: true
+
+- shell:
+    - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"] # Installiere Brew
+    #- [brew upgrade] # Upgrade Home brew
+    - [brew install fish] #Instlal Fish
+    - [brew install tmux] # Install tmux
+    - [brew install openssl readline sqlite3 xz zlib] # install all dependencies for pyenv
+
+- link:
+    # Fish shell config files
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/fish_variables: fish/fish_variables
+    ~/.gitconfig: gitconfig
+    ~/.tmux.conf: mac/tmux.conf
+    ~/.zprofile: mac/zprofile
+    ~/.zshrc: mac/zshrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+# Setting up vscode:
+- link:
+    # vscode:
+    "~/Library/Application Support/Code/User/settings.json":
+      path: vscode/settings.json
+      create: true
+
+- shell:
+    - [bash ./vscode/install.sh, Installing vscode extensions]
+
+# Setting up Python pip
+- shell:
+    - [pip install --upgrade pip]
+    - [pip install yapf]
