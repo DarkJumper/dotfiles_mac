@@ -1,3 +1,4 @@
+# maybe change the structure of this file later
 - clean: 
     - "~"
     - "~/.config/fish"
@@ -10,10 +11,10 @@
 
 - shell:
     - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"] # Installiere Brew
-    #- [brew upgrade] # Upgrade Home brew
     - [brew install fish] #Instlal Fish
     - [brew install tmux] # Install tmux
     - [brew install openssl readline sqlite3 xz zlib] # install all dependencies for pyenv
+    - [brew install pyenv] # Install pyenv
 
 - link:
     # Fish shell config files
@@ -37,7 +38,10 @@
 - shell:
     - [bash ./vscode/install.sh, Installing vscode extensions]
 
-# Setting up Python pip
+# Setting all Python thinks
 - shell:
+    - [git clone https://github.com/pyenv/pyenv.git ~/.pyenv] #Instaliere Pyen in verzeichnis
+    - [set -Ux PYENV_ROOT $HOME/.pyenv && set -Ux fish_user_paths $PYENV_ROOT/bin $fish_user_paths] #path for fish
+    - [echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init - | source)"\nfi' >> ~/.bash_profile] # end of the shell configuration
     - [pip install --upgrade pip]
     - [pip install yapf]

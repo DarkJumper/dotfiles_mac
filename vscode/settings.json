@@ -15,6 +15,7 @@
     "editor.fontFamily": "Avenir",
     "debug.console.fontFamily": "Avenir",
     "debug.console.fontSize": 14,
+    "terminal.integrated.shell.osx": "tmux",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "600",
     "python.venvPath": "venv//bin//python3",
