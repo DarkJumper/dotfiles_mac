@@ -19,3 +19,4 @@ code --install-extension skyapps.fish-vscode
 code --install-extension skyapps.fish-vscode
 code --install-extension njpwerner.autodocstring
 code --install-extension visualstudioexptteam.vscodeintellicode
+code --install-extension formulahendry.code-runner

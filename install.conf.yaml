@@ -2,7 +2,10 @@
     link:
       relink: true
 
-- clean: ["~"]
+- clean: 
+    - "~"
+    - "~/.config/fish"
+    - '~/.config/git'
 
 - shell:
     - [brew upgrade] # Upgrade Home brew
@@ -11,6 +14,9 @@
     - [brew install openssl readline sqlite3 xz zlib] # install all dependencies for pyenv
 
 - link:
+    # Fish shell config files
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/fish_variables: fish/fish_variables
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
     ~/.zprofile: zprofile

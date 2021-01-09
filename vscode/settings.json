@@ -4,9 +4,10 @@
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.iconTheme": "vscode-great-icons",
+    "autoDocstring.docstringFormat": "google",
     "editor.wordWrapColumn": 120,
     "editor.wordWrap": "on",
-    "python.pythonPath": "//usr/local//bin//python3",
+    "python.pythonPath": "//Users/peterschwarz/.pyenv/shims/python",
     "editor.formatOnSave": true,
     "python.formatting.provider": "yapf",
     "editor.fontSize": 15,
@@ -19,6 +20,9 @@
     "python.venvPath": "venv//bin//python3",
     "editor.formatOnPaste": true,
     "terminal.integrated.fontFamily": "monospace",
+    "code-runner.executorMap": {
+        "python": "$pythonPath -u $fullFileName"
+    },
     "[plaintext]": {
         "editor.quickSuggestions": false
     },
@@ -39,11 +43,12 @@
         "120",
         "--aggressive"
     ],
-    "autoDocstring.docstringFormat": "sphinx",
     "python.languageServer": "Pylance",
     "explorer.confirmDelete": false,
     "gitlens.views.repositories.files.layout": "list",
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "LaserWave Italic",
     "C_Cpp.updateChannel": "Insiders",
-    "jupyter.askForKernelRestart": false
+    "jupyter.askForKernelRestart": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
