@@ -44,7 +44,7 @@
     ],
     "python.linting.pylintArgs": [
         "--max-line-length",
-        "120",
+        "80",
         "--aggressive"
     ],
     "python.languageServer": "Pylance",
