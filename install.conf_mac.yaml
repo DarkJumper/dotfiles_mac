@@ -9,12 +9,21 @@
       relink: true
       force: true
 
+# install shell helper      
 - shell:
     - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"] # Installiere Brew
+    - [curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python] # install Poetry
     - [brew install fish] #Instlal Fish
     - [brew install tmux] # Install tmux
     - [brew install openssl readline sqlite3 xz zlib] # install all dependencies for pyenv
     - [brew install pyenv] # Install pyenv
+
+# install selected python version      
+- shell:
+    - [pyenv install 3.9.1] # install python version 3.9.1 default version
+    - [pyenv global 3.9.1] # set global python version 3.9.1
+    - [python3 -m pip install --user pipx] # install pipx
+    - [python3 -m pipx ensurepath] # install pipx 
 
 - link:
     # Fish shell config files
@@ -40,8 +49,14 @@
 
 # Setting all Python thinks
 - shell:
-    - [git clone https://github.com/pyenv/pyenv.git ~/.pyenv] #Instaliere Pyen in verzeichnis
+    - [git clone https://github.com/pyenv/pyenv.git ~/.pyenv] # Install pyenv directory
     - [set -Ux PYENV_ROOT $HOME/.pyenv && set -Ux fish_user_paths $PYENV_ROOT/bin $fish_user_paths] #path for fish
     - [echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init - | source)"\nfi' >> ~/.bash_profile] # end of the shell configuration
     - [pip install --upgrade pip]
+    - [pip install notebook]
     - [pip install yapf]
+    - [pip install poetry]
+    - [poetry config virtualenvs.in-project true]
+    - [pip install virtualenv]
+    - [pip install virtualenvwrapper]
+    - [pipx install virtualfish]

@@ -1,11 +1,10 @@
 {
-    "window.zoomLevel": 1,
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.iconTheme": "vscode-great-icons",
     "autoDocstring.docstringFormat": "google",
-    "autoDocstring.includeExtendedSummary": true,
+    "autoDocstring.includeExtendedSummary": false,
     "autoDocstring.includeName": true,
     "autoDocstring.startOnNewLine": true,
     "editor.wordWrapColumn": 120,
@@ -15,10 +14,10 @@
     "python.formatting.provider": "yapf",
     "editor.fontSize": 15,
     "editor.fontWeight": "500",
-    "editor.fontFamily": "Avenir",
-    "debug.console.fontFamily": "Avenir",
+    "editor.fontFamily": "Inter",
+    "debug.console.fontFamily": "Inter",
     "debug.console.fontSize": 14,
-    "terminal.integrated.shell.osx": "tmux",
+    "terminal.integrated.shell.osx": "fish",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "600",
     "python.venvPath": "venv//bin//python3",
@@ -54,5 +53,12 @@
     "C_Cpp.updateChannel": "Insiders",
     "jupyter.askForKernelRestart": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "jupyter.textOutputLimit": 2500,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "kite.showWelcomeNotificationOnStartup": false,
+    "window.zoomLevel": 1,
+    "python.defaultInterpreterPath": "//Users/peterschwarz/.pyenv/shims/python"
 }
