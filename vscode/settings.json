@@ -17,7 +17,6 @@
     "editor.fontFamily": "Inter",
     "debug.console.fontFamily": "Inter",
     "debug.console.fontSize": 14,
-    "terminal.integrated.shell.osx": "fish",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "600",
     "python.venvPath": "venv//bin//python3",

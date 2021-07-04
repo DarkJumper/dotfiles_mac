@@ -44,6 +44,14 @@
       path: vscode/settings.json
       create: true
 
+# keybindings
+- link:
+    # vscode:
+    "~/Library/Application Support/Code/User/keybindings.json":
+      path: vscode/keybindings.json
+      create: true
+
+
 - shell:
     - [bash ./vscode/install.sh, Installing vscode extensions]
 
