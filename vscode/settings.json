@@ -33,7 +33,6 @@
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
-    "editor.minimap.enabled": false,
     "git.enableSmartCommit": true,
     "python.formatting.yapfPath": "yapf",
     "python.formatting.yapfArgs": [
@@ -48,16 +47,20 @@
     "python.languageServer": "Pylance",
     "explorer.confirmDelete": false,
     "gitlens.views.repositories.files.layout": "list",
-    "workbench.colorTheme": "LaserWave",
+    "workbench.colorTheme": "LaserWave High Contrast",
     "C_Cpp.updateChannel": "Insiders",
     "jupyter.askForKernelRestart": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "jupyter.textOutputLimit": 2500,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "kite.showWelcomeNotificationOnStartup": false,
     "window.zoomLevel": 1,
-    "python.defaultInterpreterPath": "//Users/peterschwarz/.pyenv/shims/python"
+    "python.defaultInterpreterPath": "//Users/peterschwarz/.pyenv/shims/python",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }
