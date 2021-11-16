@@ -6,8 +6,8 @@
 
 - defaults:
     link:
-      relink: true
-      force: true
+    relink: true
+    force: true
 
 # install shell helper      
 - shell:
@@ -20,6 +20,7 @@
 
 # install selected python version      
 - shell:
+    - [git clone https://github.com/pyenv/pyenv-update.git (pyenv root)/plugins/pyenv-update] #install pyenv update functionality
     - [pyenv install 3.9.1] # install python version 3.9.1 default version
     - [pyenv global 3.9.1] # set global python version 3.9.1
     - [python3 -m pip install --user pipx] # install pipx
@@ -41,16 +42,8 @@
 - link:
     # vscode:
     "~/Library/Application Support/Code/User/settings.json":
-      path: vscode/settings.json
-      create: true
-
-# keybindings
-- link:
-    # vscode:
-    "~/Library/Application Support/Code/User/keybindings.json":
-      path: vscode/keybindings.json
-      create: true
-
+    path: vscode/settings.json
+    create: true
 
 - shell:
     - [bash ./vscode/install.sh, Installing vscode extensions]

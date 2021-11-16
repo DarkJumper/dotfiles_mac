@@ -1,5 +1,27 @@
 {
     "workbench.settings.editor": "json",
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "python3-repl": {
+            "path": "python3",
+            "args": [
+                "-q"
+            ]
+        }
+    },
+    "python.poetryPath": "poetry",
+    "python.linting.enabled": true,
+    "python.linting.pylintPath": "pylint",
+    "python.linting.flake8Path": "flake8",
+    "python.formatting.yapfPath": "yapf",
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.external.osxExec": "iTerm.app",
+    "files.autoSave": "onFocusChange",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.iconTheme": "vscode-great-icons",
@@ -10,8 +32,18 @@
     "editor.wordWrapColumn": 120,
     "editor.wordWrap": "on",
     "python.pythonPath": "//Users/peterschwarz/.pyenv/shims/python",
-    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
     "python.formatting.provider": "yapf",
+    "python.linting.lintOnSave": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
     "editor.fontSize": 15,
     "editor.fontWeight": "500",
     "editor.fontFamily": "Inter",
@@ -34,7 +66,6 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
     "git.enableSmartCommit": true,
-    "python.formatting.yapfPath": "yapf",
     "python.formatting.yapfArgs": [
         "--style",
         "{based_on_style:pep8, ARITHMETIC_PRECEDENCE_INDICATION:True,BLANK_LINE_BEFORE_NESTED_CLASS_OR_DEF: True,COLUMN_LIMIT:120,INDENT_WIDTH:4,INDENT_CLOSING_BRACKETS: True,NO_SPACES_AROUND_SELECTED_BINARY_OPERATORS:set(*,/),SPACES_BEFORE_COMMENT:15,20}"
@@ -44,23 +75,24 @@
         "80",
         "--aggressive"
     ],
+    "python.analysis.typeCheckingMode": "basic",
     "python.languageServer": "Pylance",
     "explorer.confirmDelete": false,
     "gitlens.views.repositories.files.layout": "list",
-    "workbench.colorTheme": "LaserWave High Contrast",
     "C_Cpp.updateChannel": "Insiders",
     "jupyter.askForKernelRestart": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "jupyter.textOutputLimit": 2500,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
     "kite.showWelcomeNotificationOnStartup": false,
-    "window.zoomLevel": 1,
     "python.defaultInterpreterPath": "//Users/peterschwarz/.pyenv/shims/python",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
-    }
+    },
+    "tabnine.experimentalAutoImports": true,
+    "sourcery.token": "user_zjZJEoUlAK8KWpM2TrFyLvFNNORug_L7pGtpAKLExwU2u1RXlFL28Jx5zvk",
+    "workbench.colorTheme": "GitHub Dark Dimmed"
 }
